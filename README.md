@@ -1,4 +1,4 @@
-# TNKR CMS
+# Hapi 17 Async Await example
 
 ```bash
 $ nvm install                          # node
