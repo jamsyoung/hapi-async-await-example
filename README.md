@@ -1,4 +1,5 @@
 # Hapi 17 Async Await example
+w/ a lil'bit o' React thrown in
 
 ```bash
 $ nvm install                          # node
