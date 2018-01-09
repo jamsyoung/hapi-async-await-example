@@ -1,0 +1,68 @@
+{
+  "name": "hapi-async-await-example",
+  "version": "1.0.0",
+  "description": "Hapi async await example with a bit o' react thrown in",
+  "author": "James Young <jmeyoung@gmail.com>",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "9.3.0"
+  },
+  "os": [
+    "darwin",
+    "linux"
+  ],
+  "dependencies": {
+    "boom": "7.1.1",
+    "chalk": "2.3.0",
+    "debug": "3.1.0",
+    "hapi": "17.2.0",
+    "hapi-swagger": "9.0.1",
+    "inert": "5.0.1",
+    "nconf": "0.10.0",
+    "prop-types": "15.6.0",
+    "react": "16.2.0",
+    "react-dom": "16.2.0",
+    "react-helmet": "5.2.0",
+    "react-router-dom": "4.2.2",
+    "request": "2.83.0",
+    "request-promise": "4.2.2",
+    "vision": "5.3.0"
+  },
+  "devDependencies": {
+    "babel-core": "6.26.0",
+    "babel-loader": "7.1.2",
+    "babel-plugin-transform-class-properties": "6.24.1",
+    "babel-preset-env": "1.6.1",
+    "babel-preset-react": "6.24.1",
+    "css-loader": "0.28.8",
+    "html-webpack-plugin": "2.30.1",
+    "style-loader": "0.19.1",
+    "webpack": "3.10.0"
+  },
+  "license": "MIT",
+  "prettier": {
+    "printWidth": 120,
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "none",
+    "bracketSpacing": false,
+    "jsxBracketSameLine": true,
+    "arrowParens": "avoid",
+    "proseWrap": "always",
+    "overrides": [
+      {
+        "files": "*.md",
+        "options": {
+          "printWidth": 80
+        }
+      }
+    ]
+  }
+}
