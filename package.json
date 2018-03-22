@@ -7,9 +7,12 @@
   "main": "server.js",
   "scripts": {
     "build": "webpack",
+    "docker:build": ". .scripts/env.sh && docker-compose build",
+    "docker:build+push": ". .scripts/env.sh && docker-compose build && gcloud docker -- push ${IMAGE_NAME}",
+    "docker:build+start": "npm run docker-compose:build && docker-compose up -d && docker-compose ps",
     "start": "node server.js"
   },
-  "engines": { "node": "9.8.0" },
+  "engines": {"node": "9.8.0"},
   "os": ["darwin", "linux"],
   "dependencies": {
     "boom": "7.2.0",
@@ -52,6 +55,6 @@
     "jsxBracketSameLine": true,
     "arrowParens": "avoid",
     "proseWrap": "always",
-    "overrides": [{ "files": "*.md", "options": { "printWidth": 100 } }]
+    "overrides": [{"files": "*.md", "options": {"printWidth": 100}}]
   }
 }

@@ -1,0 +1,15 @@
+._ignore/
+.dockerignore
+.env
+.git/
+.gitignore
+.infra/
+.nvmrc
+.vscode/
+dist/
+docker-compose.yml
+Dockerfile
+env.json
+env.sh
+node_modules/
+package-lock.json

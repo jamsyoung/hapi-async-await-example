@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hapi-async-await-example
+spec:
+  selector:
+    matchLabels:
+      app: hapi-async-await-example
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: hapi-async-await-example
+        tier: frontend
+    spec:
+      containers:
+      - name: hapi-async-await-example
+        image: gcr.io/cnn-barge-01-dev/hapi-async-await-example:1.0.0-local.2321791
+        resources:
+          cpu: 100m
+          memory: 100Mi
+        env:
+        - name: PORT
+          value: "80"
+        - name: ENVIRONMENT
+          value: "prod"
+        ports:
+        - containerPort: 80

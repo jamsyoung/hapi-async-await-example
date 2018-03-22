@@ -1,0 +1,10 @@
+version: "2"
+services:
+  hapi-async-await-example:
+    build: .
+    image: gcr.io/${GCP_CLUSTER_NAME}/${PACKAGE_NAME}:${VERSION}
+    ports:
+      - ${PORT}:${PORT}
+    environment:
+      PORT: ${PORT}
+      ENVIRONMENT: ${ENVIRONMENT}
