@@ -32,3 +32,14 @@ $ vim k8-app-deployment.yml                                     # edit the image
 $ kubectl apply -f k8-app-deployment.yml                        # apply the changes
 $ kubectl rollout status deployment/hapi-async-await-example    # monitor changes being applied
 ```
+
+## Reqs
+
+- gcloud - https://cloud.google.com/sdk/downloads#interactive
+
+```
+$ curl https://sdk.cloud.google.com | bash
+$ exec -l $SHELL
+$ gcloud init
+```
+
