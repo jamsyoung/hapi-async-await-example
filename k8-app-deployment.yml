@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: hapi-async-await-example
-  replicas: 3
+  replicas: 2
   template:
     metadata:
       labels:
@@ -19,6 +19,10 @@ spec:
         resources:
           cpu: 100m
           memory: 100Mi
+        livenessProbe:
+          httpGet:
+            path: /_hc
+            port: 80
         env:
         - name: PORT
           value: "80"

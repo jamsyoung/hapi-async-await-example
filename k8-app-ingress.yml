@@ -1,0 +1,13 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: "hapi-async-await-example-ingress-service"
+spec:
+  rules:
+  - host: hapi17.cnn.io
+    http:
+      paths:
+      - path: /*
+        backend:
+          serviceName: hapi-async-await-example
+          servicePort: 80

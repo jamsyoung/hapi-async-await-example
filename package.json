@@ -12,13 +12,8 @@
     "docker:build+start": "npm run docker:build && docker-compose up -d && docker-compose ps",
     "start": "node server.js"
   },
-  "engines": {
-    "node": "9.8.0"
-  },
-  "os": [
-    "darwin",
-    "linux"
-  ],
+  "engines": { "node": "9.8.0" },
+  "os": ["darwin", "linux"],
   "dependencies": {
     "boom": "7.2.0",
     "chalk": "2.3.2",
@@ -60,13 +55,6 @@
     "jsxBracketSameLine": true,
     "arrowParens": "avoid",
     "proseWrap": "always",
-    "overrides": [
-      {
-        "files": "*.md",
-        "options": {
-          "printWidth": 100
-        }
-      }
-    ]
+    "overrides": [{ "files": "*.md", "options": { "printWidth": 100 } }]
   }
 }
